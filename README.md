@@ -16,7 +16,7 @@ Visit my portfolio at: [https://brianylwong.github.io/portfolio](https://brianyl
 - **Education**: Academic background
 - **Contact**: Easy ways to connect
 
-## 🎯 Current Role
+## 💼 Current Role
 
 **Senior Product Manager** at PCCW Global | Console Connect (Dec 2024 - Present)
 - Managing Layer 1 Transmission (TX) Product, MPLS-TP, and Console Connect TX Portal
@@ -47,6 +47,7 @@ Visit my portfolio at: [https://brianylwong.github.io/portfolio](https://brianyl
 - Professional color scheme and typography
 - Easy to customize and maintain
 - SEO optimized meta tags
+- Mobile-optimized hero section
 
 ## 🚀 Getting Started
 
@@ -95,8 +96,9 @@ Edit the following files:
 - **Email**: [yatlongbrian@gmail.com](mailto:yatlongbrian@gmail.com)
 - **LinkedIn**: [linkedin.com/in/brianylwong](https://www.linkedin.com/in/brianylwong)
 - **GitHub**: [github.com/brianylwong](https://github.com/brianylwong)
+- **Credly**: [credly.com](https://www.credly.com)
 
-## 📊 Professional Certifications
+## 🏆 Professional Certifications
 
 - Google AI Professional (2026)
 - AI-Empowered SAFe Product Owner/PM (2025)
@@ -107,7 +109,7 @@ Edit the following files:
 - Fortinet Certified Associate (2024)
 - Google Project Management Professional (2023)
 
-## 📚 Education
+## 🎓 Education
 
 **Bachelor of Commerce in Marketing**  
 Hong Kong Baptist University (2012-2014)
