@@ -12,7 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const targetId = this.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
-            targetSection.scrollIntoView({ behavior: 'smooth' });
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
         });
     });
 
@@ -49,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, observerOptions);
 
-    const elementsToObserve = document.querySelectorAll('.skill-card, .timeline-item, .stat');
+    const elementsToObserve = document.querySelectorAll('.skill-card, .timeline-item, .stat, .cert-item, .education-item');
     elementsToObserve.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';

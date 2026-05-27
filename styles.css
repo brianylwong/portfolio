@@ -174,6 +174,19 @@ a {
     justify-content: center;
 }
 
+.profile-placeholder {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(0, 102, 204, 0.1), rgba(0, 163, 224, 0.1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150px;
+    color: var(--primary-color);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
 .profile-pic {
     width: 350px;
     height: 350px;
@@ -191,6 +204,7 @@ a {
 .about h2,
 .experience h2,
 .skills h2,
+.education h2,
 .contact h2 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
@@ -198,14 +212,12 @@ a {
     color: var(--text-dark);
 }
 
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.about-text p {
+.about-content p {
     margin-bottom: 1.5rem;
     font-size: 1.05rem;
     color: var(--text-light);
@@ -216,7 +228,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .stat {
@@ -238,12 +250,6 @@ a {
     font-weight: 500;
 }
 
-.about-image img {
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
 /* Experience Section */
 .experience {
     padding: 6rem 0;
@@ -251,7 +257,7 @@ a {
 
 .timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -304,12 +310,14 @@ a {
 .timeline-content h3 {
     color: var(--primary-color);
     margin-bottom: 0.5rem;
+    font-size: 1.1rem;
 }
 
 .company {
     color: var(--text-light);
     font-weight: 600;
     margin-bottom: 1rem;
+    font-size: 0.95rem;
 }
 
 .timeline-content ul {
@@ -322,6 +330,8 @@ a {
     margin-bottom: 0.8rem;
     padding-left: 1.5rem;
     position: relative;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 .timeline-content li::before {
@@ -342,6 +352,7 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    margin-bottom: 4rem;
 }
 
 .skill-card {
@@ -366,6 +377,93 @@ a {
 .skill-card p {
     color: var(--text-light);
     line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Certifications */
+.certifications {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-top: 2rem;
+}
+
+.certifications h3 {
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cert-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--light-bg);
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.cert-year {
+    font-weight: 700;
+    color: var(--primary-color);
+    min-width: 50px;
+    font-size: 0.9rem;
+}
+
+.cert-name {
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.cert-note {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.cert-note a {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.cert-note a:hover {
+    text-decoration: underline;
+}
+
+/* Education Section */
+.education {
+    padding: 6rem 0;
+}
+
+.education-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    max-width: 800px;
+    margin: 0 auto;
+    border-left: 5px solid var(--primary-color);
+}
+
+.education-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.institution {
+    color: var(--text-light);
+    font-weight: 500;
 }
 
 /* Contact Section */
@@ -424,6 +522,16 @@ a {
         font-size: 2.5rem;
     }
 
+    .tagline {
+        font-size: 1.2rem;
+    }
+
+    .profile-placeholder {
+        width: 250px;
+        height: 250px;
+        font-size: 100px;
+    }
+
     .profile-pic {
         width: 250px;
         height: 250px;
@@ -434,9 +542,8 @@ a {
         font-size: 0.9rem;
     }
 
-    .about-grid,
     .timeline::before {
-        grid-template-columns: 1fr;
+        left: 0;
     }
 
     .timeline-item {
@@ -453,11 +560,55 @@ a {
         transform: translateX(-50%);
     }
 
+    .timeline-content {
+        margin-left: 2rem;
+    }
+
     .stats {
         grid-template-columns: 1fr;
     }
 
-    .timeline-content {
-        margin-left: 2rem;
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about h2,
+    .experience h2,
+    .skills h2,
+    .education h2,
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu {
+        gap: 0.5rem;
+        font-size: 0.8rem;
     }
 }
