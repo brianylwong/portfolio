@@ -97,14 +97,14 @@ a {
     align-items: center;
     gap: 4rem;
     margin-top: 80px;
-    padding: 4rem 0;
-    min-height: 90vh;
+    padding: 6rem 0;
+    min-height: 100vh;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
 .hero-content h1 {
     font-size: 3.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     line-height: 1.2;
     color: var(--text-dark);
 }
@@ -118,24 +118,16 @@ a {
 }
 
 .tagline {
-    font-size: 1.3rem;
-    color: var(--primary-color);
-    margin-bottom: 0.25rem;
-    font-weight: 700;
-}
-
-.specialties {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: var(--secondary-color);
     margin-bottom: 1rem;
     font-weight: 600;
-    letter-spacing: 0.5px;
 }
 
 .description {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: var(--text-light);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     max-width: 500px;
     line-height: 1.6;
 }
@@ -150,7 +142,7 @@ a {
     padding: 0.875rem 2rem;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 1rem;
     transition: all 0.3s ease;
     display: inline-block;
     border: 2px solid transparent;
@@ -344,7 +336,7 @@ a {
 }
 
 .timeline-content li::before {
-    content: '▸';
+    content: '\25b8';
     position: absolute;
     left: 0;
     color: var(--primary-color);
@@ -443,7 +435,6 @@ a {
 .cert-note a {
     color: var(--primary-color);
     font-weight: 600;
-    margin: 0 4px;
 }
 
 .cert-note a:hover {
@@ -524,42 +515,47 @@ a {
 @media (max-width: 768px) {
     .hero {
         grid-template-columns: 1fr;
-        padding: 2rem 0;
+        padding: 3rem 0;
         margin-top: 70px;
         gap: 2rem;
-        min-height: auto;
+    }
+
+    .hero .container {
+        padding: 0 20px;
+    }
+
+    .hero-content {
+        padding: 0 1rem;
+    }
+
+    .hero-image {
+        padding: 0 1rem;
     }
 
     .hero-content h1 {
-        font-size: 2.2rem;
-        margin-bottom: 0.25rem;
+        font-size: 2.5rem;
+        margin-bottom: 0.8rem;
     }
 
     .tagline {
-        font-size: 1.1rem;
-        margin-bottom: 0.2rem;
-    }
-
-    .specialties {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         margin-bottom: 0.8rem;
     }
 
     .description {
-        font-size: 0.95rem;
-        margin-bottom: 1rem;
-        max-width: 100%;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     .profile-placeholder {
-        width: 200px;
-        height: 200px;
-        font-size: 80px;
+        width: 250px;
+        height: 250px;
+        font-size: 100px;
     }
 
     .profile-pic {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
     }
 
     .nav-menu {
@@ -608,43 +604,41 @@ a {
     .skills-grid {
         grid-template-columns: 1fr;
     }
-
-    .cta-buttons {
-        flex-direction: column;
-        gap: 0.8rem;
-    }
-
-    .btn {
-        width: 100%;
-        text-align: center;
-    }
 }
 
 @media (max-width: 480px) {
+    .hero {
+        padding: 2rem 0;
+        gap: 1.5rem;
+    }
+
+    .hero-content {
+        padding: 0 1rem;
+    }
+
+    .hero-image {
+        padding: 0 1rem;
+    }
+
     .hero-content h1 {
-        font-size: 1.8rem;
-        margin-bottom: 0.2rem;
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
     }
 
     .tagline {
-        font-size: 0.95rem;
-        margin-bottom: 0.15rem;
-    }
-
-    .specialties {
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin-bottom: 0.6rem;
     }
 
     .description {
-        font-size: 0.9rem;
-        margin-bottom: 0.8rem;
+        font-size: 0.95rem;
+        margin-bottom: 1.2rem;
         line-height: 1.5;
     }
 
     .cta-buttons {
         flex-direction: column;
-        gap: 0.6rem;
+        gap: 0.8rem;
     }
 
     .btn {
@@ -660,13 +654,13 @@ a {
     }
 
     .profile-placeholder {
-        width: 150px;
-        height: 150px;
-        font-size: 60px;
+        width: 180px;
+        height: 180px;
+        font-size: 80px;
     }
 
     .profile-pic {
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
     }
 }
